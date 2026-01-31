@@ -1,6 +1,6 @@
 {
   "name": "npm-init-helper",
-  "version": "1.6.3",
+  "version": "1.6.4",
   "description": "helper functions for `create-*` packages (to be used with `npm init-*`)",
   "main": "dist/helpers.js",
   "types": "dist/helpers.d.ts",
