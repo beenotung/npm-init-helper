@@ -1,5 +1,4 @@
-// @ts-expect-error
-import * as degit from 'tiged'
+import { tiged } from '@beenotung/tiged'
 import * as fs from 'fs'
 import * as fsExtra from 'fs-extra'
 import * as path from 'path'
@@ -16,8 +15,8 @@ export async function cloneGitRepo(options: {
   if (options.showLog) {
     console.log('Cloning from', options.src, '...')
   }
-  let git = degit(options.src)
-  let log = (info: degit.Info) => console.error(info.message)
+  let git = tiged(options.src)
+  let log = (info: { message?: string }) => console.error(info.message)
   if (options.showWarn) {
     git.on('warn', log)
   }

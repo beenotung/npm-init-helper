@@ -19,8 +19,8 @@
   },
   "license": "BSD-2-Clause",
   "dependencies": {
-    "fs-extra": "^10.0.1",
-    "tiged": "github:tiged/tiged#95d0261"
+    "@beenotung/tiged": "^2.12.8",
+    "fs-extra": "^10.0.1"
   },
   "devDependencies": {
     "@types/degit": "^2.8.3",
@@ -36,5 +36,11 @@
   "bugs": {
     "url": "https://github.com/beenotung/npm-init-helper/issues"
   },
-  "homepage": "https://github.com/beenotung/npm-init-helper#readme"
+  "homepage": "https://github.com/beenotung/npm-init-helper#readme",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "tiged"
+    ]
+  }
 }
