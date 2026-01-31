@@ -5,7 +5,7 @@
   "main": "dist/helpers.js",
   "types": "dist/helpers.d.ts",
   "scripts": {
-    "test": "tsc --noEmit",
+    "test": "npx ts-node test/index.ts",
     "build": "tsc"
   },
   "keywords": [
